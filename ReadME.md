@@ -13,7 +13,7 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 ### Installation
 
 1. Clone the repository to your local machine:
-   ```git clone https://github.com/your-username/travel-destination-planner.git```
+   ```git clone https://github.com/luismendes535/travel-destination-planner```
 
 2. Navigate to the project directory:
     ```cd travel-destination-planner```
@@ -37,13 +37,13 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 
 To run tests, use the following command:
 
-    ```npm test```
+    npm test
 
 ### Coverage
 
 To generate test coverage reports:
 
-    ```npm run coverage```
+    npm run coverage
 
 This command will run tests with coverage analysis using Web Test Runner and provide a coverage report.
 
@@ -58,6 +58,10 @@ This command will run tests with coverage analysis using Web Test Runner and pro
 - **Testing Tools**: The project is tested using Web Test Runner.
 
 - **ES6 & Babel**: The codebase is written in ES6 JavaScript, transpiled using Babel to ensure compatibility with legacy browsers.
+
+## Deployment
+
+The project is deployed using Netlify, and you can access the live version at https://main--inspiring-mandazi-47c7fc.netlify.app/.
 
 ### License
 
