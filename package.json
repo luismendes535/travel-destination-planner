@@ -1,0 +1,34 @@
+{
+  "name": "travel-destination-planner",
+  "version": "1.0.0",
+  "description": "COCO's code challenge",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --config webpack.config.modern.js --mode development --open",
+    "build:modern": "webpack --config webpack.config.modern.js",
+    "build:legacy": "webpack --config webpack.config.legacy.js",
+    "build": "npm run build:modern && npm run build:legacy",
+    "test": "web-test-runner \"src/components/**/*.test.js\" --node-resolve",
+    "coverage": "web-test-runner \"src/components/**/*.test.js\" --node-resolve --coverage"
+  },
+  "author": "Luis Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@open-wc/testing": "^3.2.0",
+    "@open-wc/testing-helpers": "^2.3.0",
+    "@web/test-runner": "^0.17.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "style-loader": "^3.3.3",
+    "webpack-merge": "^5.9.0"
+  }
+}
