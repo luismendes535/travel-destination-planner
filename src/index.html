@@ -1,0 +1,22 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Destination Planner</title>
+</head>
+<body>
+  <!-- Create a container to hold the components -->
+  <div id="root"></div>
+
+  <script type="module">
+    // Load the appropriate bundle based on browser support
+    const supportsES6 = 'noModule' in HTMLScriptElement.prototype;
+    const script = document.createElement('script');
+    script.src = supportsES6 ? 'bundle.js' : 'legacy-bundle.js';
+    document.getElementById('root').appendChild(script);
+  </script>
+</body>
+</html>
