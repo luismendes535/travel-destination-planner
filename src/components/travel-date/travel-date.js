@@ -6,19 +6,11 @@ class TravelDate extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
     <style>
-      /* Your existing styles */
-
-      /* ... */
-
       input[type="date"] {
-        padding: 12px; /* Increase padding for larger input */
+        padding: 12px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        background: url('../assets/icons/calendar-icon.png') left 10px no-repeat; /* Adjust icon spacing */
-        background-size: 20px 20px;
-        box-sizing: border-box; /* Include padding and border in width calculation */
       }
-
     </style>
   `;
 
